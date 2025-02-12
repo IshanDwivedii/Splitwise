@@ -35,6 +35,7 @@ public class SettleUpController {
                 response.setResponseStatus(ResponseStatus.SUCCESS);
             } catch (Exception ex){
                 response.setResponseStatus(ResponseStatus.FAILURE);
+                response.setFailureMessage(ex.getMessage());
             }
             return response;
         }

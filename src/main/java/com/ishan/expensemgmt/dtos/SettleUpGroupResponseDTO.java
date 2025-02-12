@@ -10,5 +10,6 @@ import java.util.List;
 @Setter
 public class SettleUpGroupResponseDTO {
     private ResponseStatus responseStatus;
+    private String failureMessage;
     private List<Transaction> transactions;
 }
